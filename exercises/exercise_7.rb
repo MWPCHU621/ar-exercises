@@ -10,3 +10,7 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+
+test_store = Store.create(:name => "montreal")
+puts test_store.errors[:name]
