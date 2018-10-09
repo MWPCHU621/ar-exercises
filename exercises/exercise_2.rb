@@ -5,13 +5,10 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
-class Stores < ActiveRecord::Base
 
-  @store1 = Stores.find(1)
-  @store2 = Stores.find(2)
+@store1 = Store.find(1)
+@store2 = Store.find(2)
 
-  @store1.update(:name => "toronto")
+@store1.update(:name => "toronto")
 
-  puts @store1.name
-
-end
+puts @store1.name
