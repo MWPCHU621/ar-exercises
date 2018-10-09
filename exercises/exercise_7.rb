@@ -11,6 +11,7 @@ puts "----------"
 
 # Your code goes here ...
 
+puts "please enter a city: "
+user_input = gets.chomp
 
-test_store = Store.create(:name => "montreal")
-puts test_store.errors[:name]
+test_store = Store.create(:name => "#{user_input}")
